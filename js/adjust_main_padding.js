@@ -6,7 +6,7 @@ function adjustMainPadding() {
     const headerHeight = header.offsetHeight;
     const footerHeight = footer.offsetHeight;
 
-    main.style.paddingTop = headerHeight + 'px';
+    main.style.paddingTop = headerHeight + 10 + 'px';
     main.style.paddingBottom = footerHeight + 20 + 'px';
 }
 
