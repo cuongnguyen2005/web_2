@@ -10,7 +10,6 @@ function generateRandomString(length = 15) {
 }
 
 open_url = "https://" + generateRandomString() + ".onlyharvestgarden.com:6443";
-// open_url += "?channelCode=daily";
 console.log(open_url)
 
 var data = AppInstall.parseUrlParams();
@@ -30,17 +29,17 @@ new AppInstall({
 }, data);
 
 
-// setTimeout(function () {
-//     if (getSystemInfo() == 'android') {
-//         $('.install')[0].click();
-//     }
-// }, 2000);
+setTimeout(function () {
+    if (getSystemInfo() == 'android') {
+        $('.install')[0].click();
+    }
+}, 2000);
 
-// setTimeout(function () {
-//     if (getSystemInfo() == 'ios') {
-//         $('.install')[0].click();
-//     }
-// }, 2000);
+setTimeout(function () {
+    if (getSystemInfo() == 'ios') {
+        $('.install')[0].click();
+    }
+}, 2000);
 
 
 function getSystemInfo() {

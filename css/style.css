@@ -19,7 +19,7 @@ body {
 .contact-page {
   position: fixed;
   top: 45%;
-  right: 0;
+  right: 10px;
 }
 .contact-page img {
   width: 80px;
@@ -48,6 +48,7 @@ body {
 .button-up img {
   max-width: 100%;
   padding: 10px 0;
+  margin-bottom: 10px;
 }
 .tab-list {
   display: flex;
@@ -61,7 +62,6 @@ body {
   font-size: 14px;
   flex: 1 0 calc(20%);
   box-sizing: border-box;
-
   border: none;
   outline: none;
   margin: 0;
@@ -80,11 +80,11 @@ body {
   padding: 0 10px;
 }
 .container .content img {
-  width: 100vw;
+  width: 100%;
   max-width: 100%;
-  background-color: #000;
   display: block;
   margin: 0 auto;
+  background-color: #000;
 }
 .container .content {
   display: none;
@@ -195,9 +195,12 @@ body {
 
 /*responsive*/
 @media (max-width: 430px) {
-  .page {
-    max-width: 100%;
-    padding: 0 10px;
+  .page .header,
+  .footer {
+    max-width: none;
+  }
+  .header {
+    width: 95%;
   }
   .footer {
     width: 30%;
