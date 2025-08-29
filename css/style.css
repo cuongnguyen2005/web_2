@@ -199,8 +199,10 @@ body {
   .footer {
     max-width: none;
   }
-  .header {
+  .button-up,
+  .tab-list {
     width: 95%;
+    margin: 0 auto;
   }
   .container {
     padding: 0;
